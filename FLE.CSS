@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Source Code Pro', monospace;
+   }
+body{
+    background-image: radial-gradient(black,rgb(56, 52, 77));/* fondo degradado, pero invertifo referente a los demas cajas */
+    background-attachment: fixed;
+    display: flex;/* hace el contenido flexible de de toda la pagina */
+    justify-content: center;/* centra  el contenido de toda la pagina */
+    align-items: center;/* centra a lo largo el contenito de toda la pagina */
+    flex-direction: column;
+}
+header{/* encabezado */
+    max-width: 1500px;
+    min-width: 1500px;
+    background-image: radial-gradient(black,rgb(56, 52, 77));
+    width: 1300px;
+    height: 115px;
+    padding: 10px;
+    border: 3px solid #95a5a6;
+    margin: 8px;
+    font-size: 22px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 8px;
+    font-weight: bold;/* negritas */
+    position:initial;
+    text-shadow: 0px 0px 35px beige;
+}
+h2{
+    font-weight: bold;/* negritas */
+    text-align: center;
+}
+nav{/* barra de bisqueda que aun no esta habilitada */
+    max-width: 1300px;
+    min-width: 1000px;
+    background-image: radial-gradient(black,rgb(56, 52, 77));
+    width: 1000px;/*  aqui solo le di diseño del nav, no  */
+    height: 50px;
+    padding: 10px;
+    border: 3px solid #95a5a6;
+    margin: 8px auto 8px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+.busca{/* estilo de la barra de busqueda */
+    display: flex;/* con este par de indicaciones centre el listado */
+    justify-content: space-around;
+    list-style-type: none; /* quita el punto del listado ul-il */
+    font-weight: bold;    
+}
+.nlinks{/* estilo dle buscador, color y  quita el subrayado */
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    transform: scale(1.2, 1.2);
+    /* font-size: 108%; */
+    background-color: rgb(0,0,0,0.20);
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s all;
+    text-shadow: 15px 3px 10px beige;
+}
+a{
+    transition: 3s all;
+}
+li:hover{
+    transform: scale(1.2, 1.2);
+    transition: 0.8s all;
+}
+li{
+    transition: 4s all;
+    text-align: center;
+    margin-left:15px auto 15px;
+    padding: 5px;
+    list-style-type: none;
+}
+ol{
+    margin: 15px auto 15px;
+    list-style-type: none;
+}
+main{/* por ahora contiene solo como autor a Anne Rice */
+    max-width: 1500px;
+    min-width: 1500px;
+    display: grid;
+    grid-template-columns: 1fr 58% 1fr;
+    padding: 5px;
+    border: 3px double #95a5a6;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+aside{/* autores y cita de autor */
+    background-image: radial-gradient(black,rgb(56, 52, 77));
+    padding: 30px;
+    border: 3px double #95a5a6;
+    margin: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    text-align: center;
+    overflow: hidden;
+}
+.listadodeautor{
+    margin-left: 13px;
+    list-style-type: none;
+    text-align: left;
+}
+#tautores{/* titulo de autores con estilo */
+    font-size: 2em;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-content: center;
+}
+#maincontenido{
+    height: auto;
+    padding: 8px;
+    margin: 5px;
+    background-color: rgb(0,0,0,0.20);
+    border-radius: 10px;
+    text-align: justify;
+    overflow: hidden;
+}
+#corto{
+    padding: 100px;
+    margin: 70px auto 70px;
+    font-size: 20px;
+    text-align: justify;
+}
+#sanne{/* este es el recuado donde incluye la foto, y la biografia */
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+#h3anne{/* sobre el titulo del autor en .sanne */
+    text-align: center;
+    background-color: rgb(0,0,0,0.20);
+    border-radius: 10px;
+    font-size: 3em;
+}
+#ARf{/* sobre la foto del autor en #sanne */
+    width: 12em;
+    padding: 5px;
+    margin: 15px auto 15px;
+    border-radius: 15px;
+    filter: grayscale(80%);
+    box-shadow: 5px 5px 5px black, 5px 5px 15px white;
+}
+#Catrina{
+    margin: 50px 222px 50px;
+    width: 22em;
+    padding: 5px;    
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black, 5px 5px 15px white;
+}
+summary{
+    transition: 2s all;
+}
+#bio{
+    text-align: center;
+    background-color: rgb(0,0,0,0.20);
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+#datos{
+    text-align: center;
+    font-size: 1em;
+    margin: 15px auto 15px;
+}
+.detailsColección{/* este es el recuadro de la coleccion de libros */
+    width: 650px;
+    font-size: 2em;
+    text-align: center;
+    padding: 5px;
+}
+.mifrase{
+    font-size: 20px;
+    text-align: center;
+    margin: 30px auto 30px; 
+}
+.indexunlugar{
+    width: 650px;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin: 30px auto 30px;   
+}
+.submenus{/* estilo de los submenus, vampiros, brujas y otros */
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align:center;
+    padding: 5px;
+}
+.citas{
+    margin-top: 50px;
+}
+#autor{
+    font-style:italic;
+    font-weight: bold;
+}
+footer{ /* pie de pagina */
+    max-width: 1500px;
+    min-width: 1500px;
+    background-image: radial-gradient(black,rgb(56, 52, 77));
+    width: 1300px;
+    height: 150px;
+    padding: 13px;
+    border: 3px solid #95a5a6;
+    margin: 5px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-content:space-around;
+    color: white;
+}
+/* impotante para mantener el estilo blanco, modificaiones con estilo dentro del pie de pagina y biografia de autor */
+.linkredes{/* se modificaron los coroles de los links con class, de footer y autores */
+    color: white;
+    text-decoration: none; /* quita el subyado */
+    transition: 3s all;
+}
+.linkredes:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.5s all;
+}
+.links{/* se modificaron los coroles de los links con class, de footer y autores */
+    color: white;
+    text-decoration: none; /* quita el subyado */
+}
+.link-footer{
+    display: flex;
+    align-items: center;
+}
+.link-footer2{
+    display: flex;
+    justify-content: end;
+}
+.redes{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 4px 10px 4px;
+}
+.divcontacto{
+    width: 650px;
+    height: 90px;
+    padding: 6px;
+    margin: 4px 10px 4px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+#centrofooter{
+    width: 80px;
+    margin: 20px 30px;
+    border-radius: 25px;
+    transition: 3s all;
+}
+#centrofooter:hover{
+    transform: scale(1.2, 1.2);
+    transition: 0.8s all;
+}
+.divotras{
+    width: 650px;
+    height: 90px;
+    padding: 6px;
+    margin: 4px 10px 4px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
