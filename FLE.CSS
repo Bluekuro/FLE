@@ -149,6 +149,18 @@ aside{/* autores y cita de autor */
     border-radius: 10px;
     font-size: 3em;
 }
+#como-forma_intro{
+    margin:50px;
+    height: 100%;
+    padding: 10px;
+    font-size: 25px;
+}
+#spanformma{
+    margin: 25px;
+    height: 100%;
+    padding: 55px;
+    font-size: 50px;
+}
 .ARf{/* sobre la foto del autor en #sanne */
     width: 12em;
     padding: 5px;
@@ -166,6 +178,9 @@ aside{/* autores y cita de autor */
 }
 summary{
     transition: 2s all;
+}
+.spanformma{
+
 }
 .bio{
     text-align: center;
